@@ -23,6 +23,8 @@ let g:auto_ctags = 1
 set encoding=utf-8
 set fileencodings=utf-8,euc-jp,sjis,cp932,iso-2022-jp
 
+colorscheme darkblue
+
 " NeoBundle
 " Note: Skip initialization for vim-tiny or vim-small.
 if 0 | endif
