@@ -7,6 +7,9 @@ set backspace=indent,eol,start
 noremap ; :
 noremap : ;
 
+set list
+set listchars=tab:>-,trail:-,extends:>,precedes:<,nbsp:%
+
 syntax on
 
 " disable netrw
