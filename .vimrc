@@ -56,6 +56,7 @@ NeoBundle 'dhruvasagar/vim-table-mode' " create table easily
 NeoBundle 'rhysd/vim-syntax-christmas-tree' " christmas tree
 NeoBundle 'soramugi/auto-ctags.vim' " auto update ctags
 NeoBundle 'udalov/kotlin-vim' " kotlin syntax
+NeoBundle 'tomtom/tcomment_vim' " toggle comment
 
 call neobundle#end()
 
