@@ -60,6 +60,7 @@ NeoBundle 'rhysd/vim-syntax-christmas-tree' " christmas tree
 NeoBundle 'soramugi/auto-ctags.vim' " auto update ctags
 NeoBundle 'udalov/kotlin-vim' " kotlin syntax
 NeoBundle 'tomtom/tcomment_vim' " toggle comment
+NeoBundle 'apple-swift', {'type': 'nosync', 'base': '~/.vim/bundle/manual'} " Swift syntax
 
 call neobundle#end()
 
