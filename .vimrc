@@ -1,9 +1,12 @@
 set number
-set tabstop=2
-set expandtab
 set clipboard+=unnamed
 set backspace=indent,eol,start 
 set hlsearch
+
+set expandtab
+set tabstop=2
+set softtabstop=0
+set shiftwidth=4
 
 noremap ; :
 noremap : ;
