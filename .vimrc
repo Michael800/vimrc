@@ -61,6 +61,7 @@ NeoBundle 'soramugi/auto-ctags.vim' " auto update ctags
 NeoBundle 'udalov/kotlin-vim' " kotlin syntax
 NeoBundle 'tomtom/tcomment_vim' " toggle comment
 NeoBundle 'apple-swift', {'type': 'nosync', 'base': '~/.vim/bundle/manual'} " Swift syntax
+NeoBundle 'tpope/vim-fugitive' " Git
 
 call neobundle#end()
 
