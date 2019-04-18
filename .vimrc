@@ -33,6 +33,10 @@ let g:auto_ctags = 1
 set encoding=utf-8
 set fileencodings=utf-8,euc-jp,sjis,cp932,iso-2022-jp
 
+" vim-gitgutter settings
+set updatetime=250
+let g:gitgutter_highlight_lines = 1
+
 colorscheme darkblue
 
 " NeoBundle
@@ -65,6 +69,7 @@ NeoBundle 'udalov/kotlin-vim' " kotlin syntax
 NeoBundle 'tomtom/tcomment_vim' " toggle comment
 NeoBundle 'apple-swift', {'type': 'nosync', 'base': '~/.vim/bundle/manual'} " Swift syntax
 NeoBundle 'tpope/vim-fugitive' " Git
+NeoBundle 'airblade/vim-gitgutter' " show git diff
 
 call neobundle#end()
 
