@@ -37,6 +37,12 @@ set fileencodings=utf-8,euc-jp,sjis,cp932,iso-2022-jp
 set updatetime=250
 let g:gitgutter_highlight_lines = 1
 
+" previm settings
+augroup PrevimSettings
+    autocmd!
+    autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
+augroup END
+
 colorscheme darkblue
 
 " NeoBundle
@@ -70,6 +76,8 @@ NeoBundle 'tomtom/tcomment_vim' " toggle comment
 NeoBundle 'apple-swift', {'type': 'nosync', 'base': '~/.vim/bundle/manual'} " Swift syntax
 NeoBundle 'tpope/vim-fugitive' " Git
 NeoBundle 'airblade/vim-gitgutter' " show git diff
+NeoBundle 'kazuph/previm', 'feature/add-plantuml-plugin' " plantUML & mermaid preview
+NeoBundle 'tyru/open-browser.vim' " for previm
 
 call neobundle#end()
 
