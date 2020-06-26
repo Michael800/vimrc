@@ -78,6 +78,7 @@ NeoBundle 'tpope/vim-fugitive' " Git
 NeoBundle 'airblade/vim-gitgutter' " show git diff
 NeoBundle 'kazuph/previm', 'feature/add-plantuml-plugin' " plantUML & mermaid preview
 NeoBundle 'tyru/open-browser.vim' " for previm
+NeoBundle 'tpope/vim-endwise' " wisely add 'end' in ruby
 
 call neobundle#end()
 
