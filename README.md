@@ -1,3 +1,6 @@
+## 前提
+Vim 8 系を想定
+
 ## Swift Syntax highlightの設定手順
 
 1. Apple公式GithubからSwiftリポジトリをCloneする
