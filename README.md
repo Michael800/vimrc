@@ -15,3 +15,10 @@ $ git filter-branch --subdirectory-filter utils/vim HEAD
 ```
 
 3. vimを起動して、NeoBundleのプラグインインストールが走れば完了
+
+
+## Ruby コード補完のための設定手順
+rsenseをインストールする（neocomplcache-rsense に必要）
+```sh
+$ gem install rsense
+```

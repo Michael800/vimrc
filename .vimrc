@@ -43,6 +43,15 @@ augroup PrevimSettings
     autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
 augroup END
 
+" Disable AutoComplPop.
+let g:acp_enableAtStartup = 0
+" Use neocomplcache.
+let g:neocomplcache_enable_at_startup = 1
+" Use smartcase.
+let g:neocomplcache_enable_smart_case = 1
+" Set minimum syntax keyword length.
+let g:neocomplcache_min_syntax_length = 3
+
 colorscheme darkblue
 
 " NeoBundle
@@ -79,6 +88,17 @@ NeoBundle 'airblade/vim-gitgutter' " show git diff
 NeoBundle 'kazuph/previm', 'feature/add-plantuml-plugin' " plantUML & mermaid preview
 NeoBundle 'tyru/open-browser.vim' " for previm
 NeoBundle 'tpope/vim-endwise' " wisely add 'end' in ruby
+NeoBundle 'Shougo/neocomplcache.vim' " keyword completion system
+NeoBundle 'Shougo/neocomplcache-rsense.vim' "ruby keyword completion system
+NeoBundle 'Shougo/vimproc.vim', {
+\ 'build' : {
+\     'windows' : 'tools\\update-dll-mingw',
+\     'cygwin' : 'make -f make_cygwin.mak',
+\     'mac' : 'make',
+\     'linux' : 'make',
+\     'unix' : 'gmake',
+\    },
+\ } " for neocomplcache-rsense
 
 call neobundle#end()
 
