@@ -100,6 +100,7 @@ NeoBundle 'Shougo/vimproc.vim', {
 \    },
 \ } " for neocomplcache-rsense
 NeoBundle 'Quramy/tsuquyomi' " for TypeScript
+NeoBundle 'leafgarland/typescript-vim' " TypeScript code highlight
 
 call neobundle#end()
 
