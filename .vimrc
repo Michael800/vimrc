@@ -99,6 +99,7 @@ NeoBundle 'Shougo/vimproc.vim', {
 \     'unix' : 'gmake',
 \    },
 \ } " for neocomplcache-rsense
+NeoBundle 'Quramy/tsuquyomi' " for TypeScript
 
 call neobundle#end()
 
