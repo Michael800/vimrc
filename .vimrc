@@ -19,6 +19,9 @@ set listchars=tab:>-,trail:-,extends:>,precedes:<,nbsp:%
 
 syntax on
 
+" remove spaces at end of line
+autocmd BufWritePre * :%s/\s\+$//ge
+
 " disable netrw
 let g:loaded_netrw       = 1
 let g:loaded_netrwPlugin = 1
