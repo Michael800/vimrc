@@ -25,3 +25,9 @@ rsenseをインストールする（neocomplcache-rsense に必要）
 ```sh
 $ gem install rsense
 ```
+
+## auto-ctags のための事前準備
+ctags をインストールする
+```sh
+$ brew install ctags
+```
