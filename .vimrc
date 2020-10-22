@@ -8,7 +8,7 @@ set tabstop=2
 set softtabstop=0
 set shiftwidth=2
 
-set statusline=%=%{fugitive#statusline()}
+set statusline=%f%=%{fugitive#statusline()}
 set laststatus=2
 
 noremap ; :
