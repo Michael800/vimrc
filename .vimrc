@@ -1,6 +1,6 @@
 set number
 set clipboard+=unnamed
-set backspace=indent,eol,start 
+set backspace=indent,eol,start
 set hlsearch
 
 set expandtab
@@ -8,7 +8,8 @@ set tabstop=2
 set softtabstop=0
 set shiftwidth=2
 
-set statusline=%f%=%{fugitive#statusline()}
+" set statusline=%f[LineLengthWithoutIndent=%{strwidth(substitute(getline('.'),'^\\s*','','g'))}]%=%{fugitive#statusline()}
+set statusline=%f[LineLength=%{virtcol('$')-1}]%=%{fugitive#statusline()}
 set laststatus=2
 
 noremap ; :
@@ -18,7 +19,6 @@ set list
 set listchars=tab:>-,trail:-,extends:>,precedes:<,nbsp:%
 
 syntax on
-
 " remove spaces at end of line
 autocmd BufWritePre * :%s/\s\+$//ge
 
@@ -26,7 +26,7 @@ autocmd BufWritePre * :%s/\s\+$//ge
 let g:loaded_netrw       = 1
 let g:loaded_netrwPlugin = 1
 
-" for markdown 
+" for markdown
 let g:table_mode_corner = '|'
 
 " enable auto update ctags
