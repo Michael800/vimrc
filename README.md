@@ -30,4 +30,7 @@ $ gem install rsense
 ctags をインストールする
 ```sh
 $ brew install ctags
+
+$ alias ctags="`brew --prefix`/bin/ctags"
+$ alias ctags >> ~/.bashrc
 ```
