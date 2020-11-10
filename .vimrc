@@ -8,6 +8,8 @@ set tabstop=2
 set softtabstop=0
 set shiftwidth=2
 
+set tags=tags
+
 " set statusline=%f[LineLengthWithoutIndent=%{strwidth(substitute(getline('.'),'^\\s*','','g'))}]%=%{fugitive#statusline()}
 set statusline=%f[LineLength=%{virtcol('$')-1}]%=%{fugitive#statusline()}
 set laststatus=2
@@ -83,6 +85,8 @@ NeoBundle 'suan/vim-instant-markdown' " preview markdown
 NeoBundle 'dhruvasagar/vim-table-mode' " create table easily
 NeoBundle 'rhysd/vim-syntax-christmas-tree' " christmas tree
 NeoBundle 'soramugi/auto-ctags.vim' " auto update ctags
+NeoBundle 'vim-ruby/vim-ruby' " file path support for ruby
+NeoBundle 'tpope/vim-rails' " :Ctags command to renew tags
 NeoBundle 'udalov/kotlin-vim' " kotlin syntax
 NeoBundle 'tomtom/tcomment_vim' " toggle comment
 NeoBundle 'apple-swift', {'type': 'nosync', 'base': '~/.vim/bundle/manual'} " Swift syntax
