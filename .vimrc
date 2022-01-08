@@ -10,8 +10,11 @@ set shiftwidth=2
 
 set tags=tags
 
-" set statusline=%f[LineLengthWithoutIndent=%{strwidth(substitute(getline('.'),'^\\s*','','g'))}]%=%{fugitive#statusline()}
-set statusline=%f[LineLength=%{virtcol('$')-1}]%=%{fugitive#statusline()}
+if isdirectory(expand('~/.vim/bundle/vim-fugitive'))
+  " set statusline=%f[LineLengthWithoutIndent=%{strwidth(substitute(getline('.'),'^\\s*','','g'))}]%=%{fugitive#statusline()}
+  set statusline=%f[LineLength=%{virtcol('$')-1}]%=%{fugitive#statusline()}
+endif
+
 set laststatus=2
 
 noremap ; :
