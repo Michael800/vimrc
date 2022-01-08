@@ -1,6 +1,13 @@
 ## 前提
 Vim 8 系を想定
 
+## NeoBundleの準備
+
+```sh
+$ mkdir -p ~/.vim/bundle
+$ git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+```
+
 ## Swift Syntax highlightの設定手順
 
 1. Apple公式GithubからSwiftリポジトリをCloneする
